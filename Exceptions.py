@@ -10,13 +10,13 @@ finally:
     file.close()
 
 
-try:
-    with open(filename1, 'r') as file:
+# try:
+with open(filename1, 'r') as file:
         content_1 = file.read()
         print(content_1)
 
-except FileNotFoundError:
-    print('FileNotFoundError')
+# except FileNotFoundError:
+#     print('FileNotFoundError found')
 # except ZeroDivisionError:
 #     print("ZeroDivisionError")
 
